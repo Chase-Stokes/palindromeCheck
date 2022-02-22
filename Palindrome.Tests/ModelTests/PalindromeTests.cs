@@ -6,10 +6,11 @@ namespace Palindrome.TestTools
   [TestClass]
   public class ClassNameTests
   {
+    PalindromeChecker testPalindrome = new PalindromeChecker();
+    
     [TestMethod]
-    public void PalindromeChecker_Example_Result()
+    public void PalindromeChecker_NotPalindrome_False()
     {
-      PalindromeChecker testPalindrome = new PalindromeChecker();
       Assert.AreEqual(false, testPalindrome.PalindromeBool("cat"));
     }
   }
